@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main () {
+int Nvisit,Quantidade,visitantes;
+  printf("Informe a atual quantidade de visitantes:%d",Nvisit);
+    scanf("%d",&N_atual);
+
+  printf("Informe quantos visitantes entraram:%d",visitantes);
+    scanf("%d", &visitantes);
+    
+  Quantidade = Nvisit + visitantes;
+  printf("O total de visitantes é:%d",Quantidade);
+    scanf("%d",&Quantidade);
+    
+return 0;
+}
