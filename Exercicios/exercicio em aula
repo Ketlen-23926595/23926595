@@ -1,0 +1,30 @@
+faça um algoritmo que leia os valores A,B,C e imprima na tela se a soma de A+B é menor que C ou maior igual a C.
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+double A,B,C;
+    printf ("Mostre tres valores:n");
+        scanf ("%lf %lf %lf",&A,&B,&C);
+        if{
+        (A+B>=C)
+        printf("%lf+%lf>=%lf/n",A,B,C);}
+        else{
+        printf("%lf+%lf<%lf/n",A,B,C);}
+return 0;
+}
+ou 
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+double A,B,C;
+    printf ("Mostre tres valores:n");
+        scanf ("%lf %lf %lf",&A,&B,&C);
+        if{
+        (A+B>=C)
+        printf("O valor é maior");}
+        else{
+        printf("o valor e menor");}
+return 0;
+}
