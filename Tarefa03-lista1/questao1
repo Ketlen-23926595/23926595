@@ -1,0 +1,19 @@
+a)
+#include <studio.h>
+int main () {
+int long n=400000000;
+printf("%lu\n",n);
+return 0;
+}
+b)
+#include <studio.h>
+int main(){
+int a=0;
+printf(%d\n,a);
+return 0;
+c)#include <studio.h>
+int main(){
+printf("%d\n",4);
+printf(%d\n",2);
+return 0;}
+
