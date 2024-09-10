@@ -1,4 +1,6 @@
 a)#include <studio.h>
+#include <stdlib.h>
+
 int main(){
 int num1,num2,num3;
 printf(digite o primeiro numero :");
@@ -10,20 +12,26 @@ scanf("%d",num3);
 printf("ordem inversa:%d,d%,%d\n",num3,num2,num1);
 return 0;
 }
+
 b)#include <studio.h>
+#include <stdlib.h>
+
 int main(){
 char nome [50];
 prinf("ola eu sou o numero 1,como é seu nome?\n");
-scanf("%s",nome);
-printf("bem-vindo ao clube %.\n",nome);
+scanf("%s",&nome);
+printf("bem-vindo ao clube %.\n",&nome);
 return 0;
 }
+
 c)#include <studio.h>
+#include <stdlib.h>
+
 int main(){
 char nome [50];
 int idade,dias;
 printf("digite seu nome:");
-scanf("%s",nome);
+scanf("%s",&nome);
 printf("digitre sua idade:");
 scanf("%d",&idade);
 dias =idade*365;
@@ -31,151 +39,134 @@ printf("%%s,voce tem aproximadamente %d dias de vida.\n",nome,dias);
 return 0;}
 
 d)#include <studio.h>
+#include <stdlib.h>
+#include <math.h>
+
 int main(){
-float raio,area;
+float raio,area,pi;
+pi = 3.1415926535
 printf("digite o raio do circulo:");
 scanf("%f",&raio);
-area=PI*raio*raio;
-printf("a area do circulo e:%.2f\n,area);]
-return ;}
+area = (pi*(raio*raio));
+printf("a area do circulo e:%2f\n",area);]
+return 0;}
+
 e)#include <studio.h>
+#include <stdlib.h>
+#include <math.h>
+
 int main(){
 float largura,altura,area,tinta_necessaria;
 int latas;
-printf('digite a largura da parede em metros:");
+printf("digite a largura da parede em metros:");
 scanf("%f",&largura);
-printf('digite a altura da parede em metros:");
+printf("digite a altura da parede em metros:");
 scanf("%f",&altura);
 area=largura*altura;
-tinta_necessaria=(area*0,3)/2;
+tinta_necessaria=((area*0,3)/2);
 latas=(int)
 (tinta_necessaria+0,99);
-printf("voce pricisara de %d latas de tinta.\n,latas);
+printf("voce pricisara de %d latas de tinta.\n",latas);
 return 0;
 }
+
 f)#include <studio.h>
+#include <stdlib.h>
+#include <math.h>
+
 int main(){
-float fahrenheit,celsius;
+double fahrenheit,celsius;
 printf("digite a temperatura em graus fahrenheit:");
-scanf("%f",&fahrenheit);
-celsius=(5,0/9,0)*(fahrenheit-32);
-printf("a temperatura em graus celsius e:%2f\n",celsius);
+scanf("%lf",&fahrenheit);
+celsius=(0.556*(F-32));
+printf("a temperatura em graus celsius e:%2lf\n",celsius);
 return 0;}
+
 g)#include <stdio.h>
 
 int main() {
-    float P, V, T, M;
-    printf("Digite a pressão (P) em psi: ");
-    scanf("%f", &P);
-    printf("Digite o volume (V) em pés cúbicos: ");
-    scanf("%f", &V);
-    printf("Digite a temperatura (T) em graus Fahrenheit: ");
-    scanf("%f", &T);
-    M = (P * V) / (0.37 * (T + 460));
-    printf("A massa de ar do pneu é: %.2f\n", M);
-    return 0;
-}
+double P, V, T, M;
+printf("Digite a pressão (P) em psi: ");
+scanf("%lf", &P);
+printf("Digite o volume (V) em pés cúbicos: ");
+scanf("%lf", &V);
+printf("Digite a temperatura (T) em graus Fahrenheit: ");
+scanf("%lf", &T);
+M = ((P * V) / (0.37 * (T + 460));
+printf("A massa de ar do pneu é: %.2lf\n", M);
+return 0;}
+
 h)#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
-int main() {
-    int a1, r, n, an;
+int main(){
+double N,PA;
+printf("digite sua razao: ");
+scanf("%lf",&N);
+PA=(N*N);
+printf("Seu termo e %lf",PA);
+return 0;}
 
-    printf("Digite o primeiro termo da PA (a1): ");
-    scanf("%d", &a1);
-
-    printf("Digite a razão da PA (r): ");
-    scanf("%d", &r);
-
-    printf("Digite o número do termo que deseja encontrar (n): ");
-    scanf("%d", &n);
-
-    an = a1 + (n - 1) * r;
-
-    printf("O %d-ésimo termo da PA é: %d\n", n, an);
-
-    return 0;
-}
 i)#include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 int main() {
-    float a, b, c, delta, x1, x2;
+double a, b, c, delta, x1, x2;
+printf("Digite o coeficiente a: ");
+scanf("%lf", &a);
+printf("Digite o coeficiente b: ");
+scanf("%lf", &b);
+printf("Digite o coeficiente c: ");
+scanf("%lf", &c);
+delta = ((b*b)-4*a*c);
 
-    printf("Digite o coeficiente a: ");
-    scanf("%f", &a);
+if (delta < 0) {
+printf("Não existem raízes reais.\n");} 
 
-    printf("Digite o coeficiente b: ");
-    scanf("%f", &b);
+else if (delta == 0) {
+x1 = ((-b )/ (2 * a));
+printf("Raiz única: %.2f\n", x1);} 
 
-    printf("Digite o coeficiente c: ");
-    scanf("%f", &c);
-
-    delta = b * b - 4 * a * c;
-
-    if (delta < 0) {
-        printf("Não existem raízes reais.\n");
-    } else if (delta == 0) {
-        x1 = -b / (2 * a);
-        printf("Raiz única: %.2f\n", x1);
-    } else {
-        x1 = (-b + sqrt(delta)) / (2 * a);
-        x2 = (-b - sqrt(delta)) / (2 * a);
-        printf("Raízes: x1 = %.2f, x2 = %.2f\n", x1, x2);
-    }
-
-    return 0;
+else {
+x1 = ((-b+(sqrt(delta)))/(a*2));
+x2 = ((-b-(sqrt(delta)))/(a*2));
+printf("Raízes: x1 = %.2lf, x2 = %.2lf\n", x1, x2);}
+return 0;
 }
+
 j)#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
 int main() {
-    int n1, n10, n50, n100, total;
-
-    printf("Digite a quantidade de notas de 1 real: ");
-    scanf("%d", &n1);
-
-    printf("Digite a quantidade de notas de 10 reais: ");
-    scanf("%d", &n10);
-
-    printf("Digite a quantidade de notas de 50 reais: ");
-    scanf("%d", &n50);
-
-    printf("Digite a quantidade de notas de 100 reais: ");
-    scanf("%d", &n100);
-
-    total = n1 * 1 + n10 * 10 + n50 * 50 + n100 * 100;
-
-    printf("O valor total em dinheiro é: %d reais\n", total);
-
-    return 0;
+int n1, n10, n50, n100, total;
+printf("Digite a quantidade de notas de 1 real: ");
+scanf("%d", &n1);
+printf("Digite a quantidade de notas de 10 reais: ");
+scanf("%d", &n10);
+printf("Digite a quantidade de notas de 50 reais: ");
+scanf("%d", &n50);
+printf("Digite a quantidade de notas de 100 reais: ");
+scanf("%d", &n100);
+total = (n1+(n10*10)+(n50*50)+(n100*100));
+printf("O valor total em dinheiro é: %d reais\n", total);
+return 0;
 }
-k)#include <stdio.h>
+
+l)#include <stdio.h>
 
 int main() {
-    int valor, n100, n50, n10, n5, n1;
-
-    printf("Digite o valor em reais: ");
-    scanf("%d", &valor);
-
-    n100 = valor / 100;
-    valor %= 100;
-
-    n50 = valor / 50;
-    valor %= 50;
-
-    n10 = valor / 10;
-    valor %= 10;
-
-    n5 = valor / 5;
-    valor %= 5;
-
-    n1 = valor;
-
-    printf("Notas necessárias:\n");
-    printf("%d nota(s) de 100 reais\n", n100);
-    printf("%d nota(s) de 50 reais\n", n50);
-    printf("%d nota(s) de 10 reais\n", n10);
-    printf("%d nota(s) de 5 reais\n", n5);
-    printf("%d nota(s) de 1 real\n", n1);
-
-    return 0;
+int valor, n100, n50, n10, n5, n1;
+printf("Digite o valor em reais: ");
+scanf("%d", &valor);
+n100 = (valor / 100);
+n50 = (valor / 50);
+n10 =( valor / 10);
+n5 = (valor / 5);
+n1 = valor;
+printf("Notas necessárias:\n");
+printf("A quantidade de 1 real:%d\n De 10 reais:%d\n De 50 reais:%d\n De 100 reais:%d",n1,n10,n50,n100);
+return 0;
 }
