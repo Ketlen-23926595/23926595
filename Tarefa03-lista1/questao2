@@ -161,11 +161,10 @@ int main() {
 int valor, n100, n50, n10, n5, n1;
 printf("Digite o valor em reais: ");
 scanf("%d", &valor);
-n100 = (valor / 100);
-n50 = (valor / 50);
-n10 =( valor / 10);
-n5 = (valor / 5);
-n1 = valor;
+n100 = (valor/100);
+n50 = ((valor-(n100*100))/50);
+n10 = ((valor-(n100*100)-(n50*50))/10);
+n1 = (valor-(n100*100)-(n50*50)-(n10*10));
 printf("Notas necessárias:\n");
 printf("A quantidade de 1 real:%d\n De 10 reais:%d\n De 50 reais:%d\n De 100 reais:%d",n1,n10,n50,n100);
 return 0;
