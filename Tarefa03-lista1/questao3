@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    float preco1 = 24.13, dividendo1 = 17.00;
+    float preco2 = 11.00, dividendo2 = 35.00;
+    float preco3 = 38.65, dividendo3 = 25.00;
+    float DY1, DY2, DY3;
+    int quantidade1, quantidade2, quantidade3;
+    float valor_investido = 1000.00;
+
+    // Calculando a quantidade de ações que podem ser compradas com 1000 reais
+    quantidade1 = valor_investido / preco1;
+    quantidade2 = valor_investido / preco2;
+    quantidade3 = valor_investido / preco3;
+
+    // Calculando o Dividend Yield para cada ação
+    DY1 = (dividendo1 / preco1) * 100;
+    DY2 = (dividendo2 / preco2) * 100;
+    DY3 = (dividendo3 / preco3) * 100;
+
+    // Exibindo os resultados
+    printf("Dividend Yield para Ação 1: %.2f%%\n", DY1);
+    printf("Você pode comprar %d unidades da Ação 1 com R$ 1000,00.\n\n", quantidade1);
+
+    printf("Dividend Yield para Ação 2: %.2f%%\n", DY2);
+    printf("Você pode comprar %d unidades da Ação 2 com R$ 1000,00.\n\n", quantidade2);
+
+    printf("Dividend Yield para Ação 3: %.2f%%\n", DY3);
+    printf("Você pode comprar %d unidades da Ação 3 com R$ 1000,00.\n\n", quantidade3);
+
+    return 0;
+}
