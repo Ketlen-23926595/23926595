@@ -1,5 +1,5 @@
 a)
-#include<stdio.h>
+#include <stdio.h>
 
 int main(){
 double n = 4000000000;
