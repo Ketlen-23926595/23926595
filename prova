@@ -1,0 +1,84 @@
+1)c)int main(){
+int num;
+printf("digite um numero:");
+scanf("%d",&num);
+if(num>0){
+print("numero positivo\n");
+}
+return 0;}
+
+2)b)int main(){
+int a,b;
+float media;
+printf("digite dois numeros:");
+scanf("%d %d",&a,&b);
+media=(a+b)/2.0;
+printf("media:%.2f\n",media);
+return 0;}
+
+3)a)#include <stdio.h>
+#include <stdlib>
+#include <math.h>
+int main(){
+double f,c;
+printf("digite a temperaturaem Fahrenheit:\n");
+scanf("%lf",&f);
+c=(f-32,0)*(5,0÷9,0);
+printf("a temperatura em celsius é:%.2lf\n",c;
+return 0;}
+a)código em execução 
+digite a temperatura em Fahrenheit:
+595,0
+a temperatura em celsius é:312,77
+
+b)#include <stdio.h>
+#include <stdlib>
+#include <math.h>
+int main(){
+int f,c;
+printf("digite a temperaturaem Fahrenheit:\n");
+scanf("%d",&f);
+c=(f-32,0)*(5,0÷9,0);
+printf("a temperatura em celsius é: \n",c);
+return 0;}
+b)código em execução 
+digite a temperatura em Fahrenheit:
+595,0
+a temperatura em ceksius é:
+312
+
+4)#include <stdio.h>
+#include <stdlib>
+#include <math.h> 
+int main() { 
+double temperatura; 
+printf("Digite a temperatura atual no grau Celsius: \n"); 
+scanf("%lf", &temperatura); 
+if (temperatura <= 0) { 
+printf("geleira_ temperatura muito fria!\n"); } 
+else if (temperatura > 0 && temperatura <= 15) { 
+printf("frio - pode precisar de um casaco!\n"); } 
+else if (temperatura > 15 && temperatura <= 25) {
+printf("agradável - tempo bom para sair!\n"); } 
+else if (temperatura > 25 && temperatura <= 35) { 
+printf("quente - otimo para um dia de praia!\n");}
+else if(temperatura>35){
+printf("muito quente - mantenha-se hidratado!\n"); } 
+return 0; }
+
+5)#include <stdio.h>
+#include <stdlib>
+#include <math.h> 
+int main() {
+double temperatura; 
+printf("Digite a temperatura atual do depósito: \n"); 
+scanf("%lf", &temperatura);
+if (temperatura < -10) { 
+printf("Risco Baixo - armazenamento ideal para alimentos congelados.\n"); } 
+else if (temperatura >= -10 && temperatura <= 0) { 
+printf("Risco Moderado - condições aceitáveispara armazenamento refrigerado.\n"); } 
+else if (temperatura > 0 && temperatura <= 10) { 
+printf("Risco Elevado - monitore a temperatura.\n"); } 
+else if (temperatura > 10 && temperatura <= 15) {
+printf("Risco Crítico - ação imediata necessária!.\n"); }
+return 0; }
