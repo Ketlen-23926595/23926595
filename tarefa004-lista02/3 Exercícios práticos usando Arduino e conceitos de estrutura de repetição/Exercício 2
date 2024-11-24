@@ -1,0 +1,1 @@
+A função analogRead(A1) lê o valor analógico do pino A1 do Arduino e o valor lido é armazenado na quarta posição do vetor cameraData (índice 3, pois o índice começa em 0).
