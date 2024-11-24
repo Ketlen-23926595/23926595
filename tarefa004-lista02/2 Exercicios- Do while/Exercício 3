@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int opcao;  // Para armazenar a escolha do usuário
+    int opcao;  
 
     printf("Controle de Atuação do Robô\n");
     printf("Selecione uma ação para o robô executar ou encerre o programa.\n");
@@ -34,7 +34,7 @@ int main() {
                 printf("Opção inválida! Tente novamente.\n");
                 break;
         }
-    } while (opcao != 4);  // O programa continua até o usuário escolher a opção 4
+    } while (opcao != 4); 
 
     printf("\nPrograma encerrado.\n");
     return 0;
