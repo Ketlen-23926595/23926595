@@ -1,4 +1,0 @@
- Controle de Movimento de um Robô Um robô está programado para se mover em um
- espaço de 10x10 metros. O usuário deve inserir comandos para mover o robô para frente, para trás,
- para a esquerda ou para a direita. O programa deve continuar aceitando comandos até que o usuário
- digite ’sair’
