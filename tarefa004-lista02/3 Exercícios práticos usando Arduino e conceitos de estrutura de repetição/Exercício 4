@@ -1,0 +1,7 @@
+for (int i = 0; i < 4; i++) {
+    Serial.println(ledPins[i]);
+}
+O loop começa com i = 0.
+Ele executa enquanto i < 4, ou seja, enquanto o índice estiver entre 0 e 3.
+A cada iteração, o valor de i é incrementado em 1 (i++)
+Em cada iteração, o valor do vetor ledPins na posição i é acessado e exibido no monitor serial usando
