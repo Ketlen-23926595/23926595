@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    float distancia;       // Para armazenar a distância medida pelo sensor
-    char continuar;        // Para registrar a decisão do usuário (S ou N)
+    float distancia;      
+    char continuar;        
 
     printf("Leitura de Sensores de Distância\n");
     printf("O programa encerra automaticamente se a distância for menor que 10 cm.\n");
@@ -25,9 +25,9 @@ int main() {
 
         // Pergunta ao usuário se deseja continuar
         printf("Deseja continuar as leituras? (S/N): ");
-        scanf(" %c", &continuar);  // O espaço antes de %c é para ignorar newline do buffer
+        scanf(" %c", &continuar);  
 
-    } while (continuar == 'S' || continuar == 's');  // Continua enquanto o usuário quiser
+    } while (continuar == 'S' || continuar == 's'); 
 
     printf("\nPrograma encerrado.\n");
     return 0;
