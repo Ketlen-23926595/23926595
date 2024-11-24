@@ -1,0 +1,26 @@
+int ambientData[3][5] = {
+    {22, 25, 23, 21, 24},  
+    {45, 38, 42, 40, 37},  
+    {400, 380, 420, 410, 390} 
+};
+
+void setup() {
+  Serial.begin(9600);
+
+  int totalLocais = 1;     
+  int totalLeituras = 5;    
+  int somaTemperaturas = 0; 
+
+  for (int j = 0; j < totalLeituras; j++) {
+    somaTemperaturas += ambientData[0][j]; 
+  }
+
+  float mediaTemperatura = somaTemperaturas / float(totalLeituras);
+
+  Serial.print("Média de temperatura em todos os momentos: ");
+  Serial.println(mediaTemperatura);
+}
+
+void loop() {
+
+}
