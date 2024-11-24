@@ -1,9 +1,46 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>
 
-int main()
-{
-   
+int main() {
+    int numDias;
+    float precoAcoes[100], soma = 0, media, desvioPadrao, somaQuadrados = 0;
+    char opcao;
+
+    do {
+        printf("Informe o numero de dias para analisar o desempenho das acoes: ");
+        scanf("%d", &numDias);
+
+        for (int i = 0; i < numDias; i++) {
+            printf("Informe o preco da acao no dia %d: ", i + 1);
+            scanf("%f", &precoAcoes[i]);
+            soma += precoAcoes[i]; 
+        }
+
+        media = soma / numDias;
+
+        for (int i = 0; i < numDias; i++) {
+            somaQuadrados += pow(precoAcoes[i] - media, 2); 
+        }
+        desvioPadrao = sqrt(somaQuadrados / numDias);
+
+        printf("\nMédia dos preços das acoes: %.2f\n", media);
+        printf("Desvio padrão dos preços das acoes: %.2f\n", desvioPadrao);
+
+        if (desvioPadrao < media * 0.05) {
+            printf("Desempenho: Estavel\n");
+        } else {
+            printf("Desempenho: Volatil\n");
+        }
+
+        printf("\nDeseja realizar nova analise? (s/n): ");
+        scanf(" %c", &opcao); 
+
+        soma = 0;
+        somaQuadrados = 0;
+
+    } while (opcao == 's' || opcao == 'S');
+
+    printf("\nPrograma encerrado. Obrigado!\n");
 
     return 0;
 }
