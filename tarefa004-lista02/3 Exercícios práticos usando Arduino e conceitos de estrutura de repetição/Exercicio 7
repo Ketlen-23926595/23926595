@@ -1,0 +1,8 @@
+for ( int i = 0; i < tamanhoVetor ; i ++) {
+if ( sensorReadings [ i ] == 150) {
+break ;}}
+A variável i é inicializada com o valor 0.
+A condição i < tamanhoVetor assegura que o laço será executado enquanto i for menor que o tamanho do vetor.
+A cada iteração, i é incrementado (i++), permitindo acessar os próximos elementos do vetor.
+Em cada iteração, verifica se o elemento atual do vetor (sensorReadings[i]) é igual a 150
+Se um elemento igual a 150 for encontrado, o comando break interrompe o laço for, evitando que continue verificando os elementos restantes
