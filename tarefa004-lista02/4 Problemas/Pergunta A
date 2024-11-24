@@ -1,1 +1,2 @@
-
+A primeira linha da matriz ambientData representa os dados de temperatura (em graus Celsius) medidos em um local específico em cinco momentos distintos.
+Cada elemento na linha corresponde à temperatura registrada em uma leitura.
